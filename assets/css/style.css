@@ -1,9 +1,11 @@
+/*General*/
 * {
   padding: 0%;
   margin: 0%;
 }
 body {
   font-family: Roboto, Helvetica Neue, Arial;
+  color: #fff;
 }
 /*Layout*/
 menu {
@@ -15,7 +17,7 @@ menu {
 }
 filtros {
   grid-area: filtros;
-  background-color: #dddddd;
+  background-color: #6c1c1c;
 }
 main {
   grid-area: main;
@@ -23,7 +25,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #0000ff;
+  background-color: #000000;
 }
 
 grid-container {
@@ -32,7 +34,7 @@ grid-container {
   padding: 0%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2.5fr 2fr 12fr 1fr;
+  grid-template-rows: 2fr 2fr 12fr 1fr;
   grid-template-areas:
     'menu'
     'filtros'
@@ -41,7 +43,7 @@ grid-container {
 
   background-color: #f9f9f9;
 }
-/*menu*/
+/*Menu*/
 
 .contenedor_menu {
   display: flex;
@@ -55,7 +57,6 @@ grid-container {
 }
 .menu_left p {
   margin-left: 1em;
-  color: #fff;
 }
 .menu_left img {
   margin-left: 1.5em;
@@ -63,6 +64,35 @@ grid-container {
 }
 .fa-bars {
   margin-right: 1.5em;
-  color: #fff;
   font-size: x-large;
+}
+
+/*Filtros*/
+
+filtros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedor_filtros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor_filtros p {
+  font-size: large;
+  margin-bottom: 0.2em;
+}
+
+select {
+  font-size: large;
+  margin-top: 0.2em;
+  width: 13em;
+  text-align: center;
+}
+
+select option {
+  font-size: x-small;
 }
