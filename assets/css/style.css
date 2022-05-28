@@ -56,7 +56,7 @@ grid-container {
   align-items: center;
 }
 .menu_left p {
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 .menu_left img {
   margin-left: 1.5em;
@@ -91,6 +91,8 @@ select {
   margin-top: 0.2em;
   width: 13em;
   text-align: center;
+  border: 3px solid #fff;
+  border-radius: 10px;
 }
 
 select option {
