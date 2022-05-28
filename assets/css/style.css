@@ -2,10 +2,16 @@
   padding: 0%;
   margin: 0%;
 }
-
+body {
+  font-family: Roboto, Helvetica Neue, Arial;
+}
+/*Layout*/
 menu {
   grid-area: menu;
-  background-color: #0000ff;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 filtros {
   grid-area: filtros;
@@ -26,7 +32,7 @@ grid-container {
   padding: 0%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 12fr 1fr;
+  grid-template-rows: 2.5fr 2fr 12fr 1fr;
   grid-template-areas:
     'menu'
     'filtros'
@@ -34,4 +40,29 @@ grid-container {
     'footer';
 
   background-color: #f9f9f9;
+}
+/*menu*/
+
+.contenedor_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_left {
+  display: flex;
+  align-items: center;
+}
+.menu_left p {
+  margin-left: 1em;
+  color: #fff;
+}
+.menu_left img {
+  margin-left: 1.5em;
+  width: 4em;
+}
+.fa-bars {
+  margin-right: 1.5em;
+  color: #fff;
+  font-size: x-large;
 }
