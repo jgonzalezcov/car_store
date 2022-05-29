@@ -6,6 +6,7 @@
 body {
   font-family: Roboto, Helvetica Neue, Arial;
   color: #fff;
+  height: 100vh;
 }
 /*Layout*/
 menu {
@@ -21,11 +22,16 @@ filtros {
 }
 main {
   grid-area: main;
-  background-color: #fff;
+  background-color: #000000;
 }
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   grid-area: footer;
-  background-color: #000000;
+  background-color: #6c1c1c;
+  height: 4em;
 }
 
 grid-container {
@@ -34,7 +40,7 @@ grid-container {
   padding: 0%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 2fr 12fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     'menu'
     'filtros'
@@ -49,6 +55,8 @@ grid-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .menu_left {
@@ -79,6 +87,8 @@ filtros {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .contenedor_filtros p {
@@ -93,8 +103,101 @@ select {
   text-align: center;
   border: 3px solid #fff;
   border-radius: 10px;
+  background-color: #000;
+  color: #fff;
 }
 
-select option {
+option {
   font-size: x-small;
+  width: calc(100%);
+  background-color: #6c1c1c;
+}
+
+/*galeria*/
+.grid-gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+
+  padding-top: 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100%);
+  justify-content: center;
+  border: 3px solid #fff;
+}
+
+.card img {
+  margin-top: 1em;
+  width: calc(80%);
+  height: auto;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+
+.producto {
+  font-size: medium;
+}
+.year {
+  font-size: small;
+}
+.valor {
+  font-size: small;
+}
+
+.producto {
+  margin-top: 1em;
+}
+
+button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: calc(50%);
+  font-size: large;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+
+.pag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+.select_pag {
+  border: 1px solid #fff;
+  padding: 1em;
+  font-size: medium;
+}
+/*Seleccion de hoja*/
+.prev {
+  border-radius: 10px 0px 0px 10px;
+}
+.next {
+  border-radius: 0px 10px 10px 0px;
+}
+/*footer*/
+.icons_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  background-color: #6c1c1c;
+}
+
+.fa-facebook {
+  margin-right: 0.5em;
+}
+.fa-instagram {
+  margin-left: 0.5em;
+}
+
+/*Selector de contenido movil*/
+.no-mobile {
+  display: none;
 }
