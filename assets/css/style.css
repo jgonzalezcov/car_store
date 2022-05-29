@@ -109,7 +109,7 @@ select {
 }
 
 option {
-  font-size: x-small;
+  font-size: medium;
   width: calc(100%);
   background-color: #6c1c1c;
 }
@@ -401,6 +401,7 @@ button {
 
   footer p {
     text-align: center;
+    margin-bottom: 1em;
   }
   .contenedor_menu {
     border: 8px solid #6c1c1c;
@@ -454,5 +455,11 @@ button {
   .select_pag {
     border: 1px solid #fff;
     font-size: x-small;
+  }
+  select {
+    width: 18em;
+  }
+  .icons_footer {
+    margin-top: 1em;
   }
 }
