@@ -201,18 +201,15 @@ button {
   display: none;
 }
 .movil {
-  display: block;
   display: flex;
 }
 
 /*Version Tablet*/
 @media (min-width: 576px) {
   .no-mobile {
-    display: block;
     display: flex;
   }
   .no-pc {
-    display: block;
     display: flex;
   }
   .no-table {
@@ -222,7 +219,6 @@ button {
     display: none;
   }
   .table {
-    display: block;
     display: flex;
   }
 
@@ -328,11 +324,9 @@ button {
 /*Version Escritorio*/
 @media (min-width: 992px) {
   .no-mobile {
-    display: block;
     display: flex;
   }
   .no-table {
-    display: block;
     display: flex;
   }
   .no-pc {
@@ -343,7 +337,6 @@ button {
     display: none;
   }
   .pc {
-    display: block;
     display: flex;
   }
 
