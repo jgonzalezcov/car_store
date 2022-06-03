@@ -93,7 +93,7 @@ filtros {
 
 .contenedor_filtros p {
   font-size: large;
-  margin-bottom: 0.2em;
+  margin-top: 0.2em;
 }
 
 select {
@@ -147,7 +147,7 @@ option {
   margin-top: 0.5em;
 }
 .valor {
-  font-size: small;
+  font-size: medium;
   margin-top: 0.5em;
 }
 
@@ -292,7 +292,7 @@ button {
   }
 
   .valor {
-    font-size: xx-small;
+    font-size: x-small;
   }
 
   button {
@@ -405,7 +405,7 @@ button {
   }
 
   .valor {
-    font-size: xx-small;
+    font-size: x-small;
   }
 
   button {
